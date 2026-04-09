@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Class Report System</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+
+<h2>Aarambh Prep School Daily Class Report</h2>
+
+<div class="card">
+
+<select id="class">
+ <option>Select Class</option>
+    <option>Play(A)</option>
+    <option>L.K.G(A)</option>
+    <option>U.K.G(A)</option>
+    <option>1(A)</option>
+    <option>2(A)</option>
+    <option>3(A)</option>
+    <option>4(A)</option>
+    <option>5(A)</option>
+    <option>6(A)</option>
+    <option>7(A)</option>
+    <option>8(A)</option>
+    <option>Target Batch</option>
+</select>
+
+<select id="facilitator">
+  <option>Select Teacher</option>
+    <option>Abhay Sir</option>
+    <option>Sundram Sir</option>
+    <option>Himanshu Sir</option>
+    <option>Miss Priya</option>
+    <option>Puja Mam</option>
+    <option>Kajal Mam</option>
+    <option>Soni Mam, Miss Priyanka</option>
+    <option>Soni Mam</option>
+    <option>Miss Priyanka</option>
+    <option>Kajal Mam, Puja Mam</option>
+</select>
+
+<br>
+
+<span id="daydate" style="color: #333333; font-weight: 500;"></span>
+
+<input id="totalStudents" type="number" placeholder="Total Students">
+<input id="presentStudents" type="number" placeholder="Present Students">
+
+<!-- NEW INPUTS -->
+<input id="absentInput" placeholder="Absent Students (comma separated)">
+<input id="hwNotDoneInput" placeholder="HW Not Done (comma separated)">
+<input id="extraInput" placeholder="Extra Notes">
+
+</div>
+
+<div class="card">
+<h3>Enter Period Data</h3>
+<div id="inputs"></div>
+</div>
+
+<button onclick="generate()">Generate</button>
+<button onclick="downloadImage()">Download Image</button>
+
+<!-- OUTPUT -->
+<div id="worksheet">
+
+<div class="header">
+<h1 style="font-size: 24px;">AARAMBH PREP. SCHOOL</h1>
+<div class="sub-title" style="font-size: 20px; color: #333333;font-weight: bold;">
+Class <span id="outClass"></span> — Daily Class Work Report
+</div>
+</div>
+
+<div class="top-bar">
+<div>Date: <span id="outDate"></span></div>
+<div>Facilitator: <span id="outFac"></span></div>
+<div>Total Student: <span id="outTotal"></span></div>
+<div>Present: <span id="outPresent"></span> | Absent: <span id="outAbsent"></span></div>
+</div>
+
+<table>
+<thead>
+<tr>
+<th>Period</th>
+<th>Subject</th>
+<th>Class Work</th>
+<th>Home Work</th>
+</tr>
+</thead>
+
+<tbody id="tableData"></tbody>
+</table>
+
+<div class="bottom-box">
+<p><b>Absent:</b> <span id="outAbsentText"></span></p>
+<p><b>HW Not Done:</b> <span id="outHW"></span></p>
+<p><b>Extra:</b> <span id="outExtra"></span></p>
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
