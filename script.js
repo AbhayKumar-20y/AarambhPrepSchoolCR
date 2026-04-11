@@ -40,6 +40,9 @@ window.onload = function(){
                 <option>Rhymes</option>
                 <option>Activity</option>
                 <option>Drawing</option>
+                <option>Dance</option>
+                <option>Quiz</option>
+                <option>Martial Art</option>
                 <option>Hindi Writing Book</option>
                 <option>English Writing Book</option>
                 <option>Hindi Rhymes</option>
