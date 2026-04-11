@@ -40,7 +40,7 @@ window.onload = function(){
                 <option>Rhymes</option>
                 <option>Activity</option>
                 <option>Drawing</option>
-                <option>Dance</option>
+                <option>Dance Class</option>
                 <option>Quiz</option>
                 <option>Martial Art</option>
                 <option>Hindi Writing Book</option>
@@ -51,6 +51,23 @@ window.onload = function(){
                 <option>Hindi Book(अक्षर ज्ञान)</option>
                 <option>Math Book(Numbers 1-100)</option>
                 <option>Hindi Writing Book(अक्षर लेखन)</option>
+                  <option>स्वर लेखन </option>
+                  <option>स्वर ज्ञान </option>
+                  <option>Maths copy</option>
+                  <option>English copy</option>
+                  <option>Hindi copy</option>
+                  <option>Mathematics Primer</option>
+                  <option>English cursive writing book</option>
+                  <option>Written oral / Table counting </option>
+                  <option>English book Pre- Primer</option>
+                  <option>English writing Book ( small cursive )</option>
+                  <option>Maths Book Pre- Primer</option>
+                  <option>Written Oral</option>
+
+
+
+
+                
             </select>
 
             <input id="cw${i}" placeholder="Class Work">
